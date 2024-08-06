@@ -1,0 +1,122 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+#home {
+    position: relative;
+    height: 100vh; /* Adjust this if you want a different height */
+    background: url('https://cdn.prod.website-files.com/5e0f1144930a8bc8aace526c/65f8f7ddc6683111b63a6340_65f8cee8f851c380fef428c9-92d2b5ba88ae957e4a95f172891f84bf.jpeg') ;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      
+}
+
+#home h1 {
+    font-size: 70px; 
+    margin: 0;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+}
+
+#about img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+}
+
+#projects .project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#projects .project-2 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: -20px;
+}
+
+#projects .project-3 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: -40px;
+}
+#contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact form {
+    flex: 1;
+}
+
+#contact form input, #contact form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#contact form button {
+    display: block;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer a img {
+    width: 20px;
+}
