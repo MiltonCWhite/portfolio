@@ -1,70 +1,800 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
     <title>Milton White Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Global stylesheets -->
+    <link href="./static/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="./static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./static/css/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="./static/css/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="./static/css/style.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+<body id="page-top">
+    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="topNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-none d-lg-block">
+        <!-- <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./static/assets/images/Profile.jpg" alt=""> -->
+      </span>
+    </a>
+    <!-- <span style="font-size: 25px ;color: black;"><strong>Milton White</strong></span> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+  <!--====================================================
+                      HOME
+  ======================================================-->
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="home">
+        <div class="my-auto">
+            <!--<img src="//img/logo-s.png" class="img-fluid mb-3" alt="">-->
+            <h1 class="mb-0">Hello, <br>
+              <span class="text-primary"></span>
+              
+              <span class="text-primary">I am Milton White and I am the developer you require</span>
+            </h1>
+
+            <br></br>
+            <ul class="list-inline list-social-icons mb-0">
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/milton-c-white-a653a6192/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://github.com/MiltonCWhite" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  
+                </span>
+              </a>
+            </li>
+                <a href="mailto:miltonwhite0124@gmail.com" target="_blank"><button class="btn"><strong>Hire Me</strong></button></a>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h1>Hello, my name is Milton White and I am the developer you require.</h1>
-        </section>
-        <section id="about">
-            <img src="https://mail.google.com/mail/u/0?ui=2&ik=a6382190f6&attid=0.1&permmsgid=msg-a:r-2964160252455437823&th=19123b90ee2ce5e3&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8YdihRynfvfGBGyTs7K9U-jiBdu9e7bWYZMPPZcqxvQgbK31lvYCA4S1hHlhXun2ob3fuMIX_VzklvTZ2_qlXGXVrgJQW_VCCm9h1V3ODGXINsdkWHx4sK7Do&disp=emb&realattid=1AB71E21-71C3-4DAD-BC80-E8402B3689EC" alt="Profile Picture">
-            <div>
-                <p>I love coding </p>
-                <button onclick="viewResume()">View Resume</button>
+        </div>
+    </section>
+  </div>
+
+
+
+<!--====================================================
+                          ABOUT
+======================================================-->
+<section class="resume-section p-3 p-lg-5" id="about">
+  <div class="">
+      <div class="col-12">
+          <h2 class="text-center">About Me</h2>
+          <div class="mb-5 heading-border"></div>
+      </div>    
+      <div class="resume-item col-md-15 col-sm-25"> 
+          <div class="card mx-0 p-4 mb-5" style="border-color: black; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+              <div class="resume-content mr-auto d-flex align-items-center">
+                  <img class="img-fluid img-profile rounded-circle mr-3 mb-2" src="./static/assets/images/Profile.jpg" alt="" style="max-width: 70px; max-height: 70px;">
+                  <h4 class="mb-3"><strong>Milton White</strong></h4>
+              </div>
+              <div class="resume-content mr-auto">
+                  <span>
+                      <p>Hello, I am a Web Developer || Google Assistant Developer || Amazon Alexa Skills Kit Developer. I have been working with blogs on developing websites/web applications for nearly 3 years now and have completed numerous projects. Apart from that, I am constantly developing Google Assistant APIs and have great expertise in developing skills for Alexa, both of which provide customers with live services.</p>
+                  </span>
+            
+              </div>
+              <div class="resume-date text-md-right">
+                  <span class="text-primary">
+                      <a href="https://drive.google.com/open?id=1Ipgtj6vZkjERNdkWNTSrjTWEmZ7OJSrl" target="_blank">
+                          <button class="btn">Download CV</button>
+                      </a>
+                  </span>
+              </div>
+          </div>  
+      </div> 
+  </div>
+</section>
+
+
+    <!--====================================================
+                        PORTFOLIO
+    ======================================================-->      
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio"> 
+          <div class="row my-auto">
+              <div class="col-12">
+                <h2 class="  text-center">Projects</h2>
+                <div class="mb-5 heading-border"></div>
+              </div>
+              <div class="col-md-12">
+                <div class="port-head-cont">
+                  <button class="btn btn-general btn-green filter-b" data-filter="all">All</button>
+                  <button class="btn btn-general btn-green filter-b" data-filter="consulting">Web Design</button>
+                  <button class="btn btn-general btn-green filter-b" data-filter="finance">Mobile Apps</button>
+                  <button class="btn btn-general btn-green filter-b" data-filter="marketing">Graphics Design</button> 
+                </div>
+              </div>
+          </div>
+          <div class="row my-auto">
+              <div class="col-sm-4 portfolio-item filter finance">
+                  <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/Screenshot_215_900x650.png" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter marketing">
+                  <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/Project_2_900x665.png" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter consulting">
+                  <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/Screenshot_252_900x650.png" alt="">
+                  </a>
+              </div>              
+              <div class="col-sm-4 portfolio-item filter consulting">
+                  <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/Screenshot_253_900x650.png" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter consulting">
+                  <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/Screenshot_254_900x650.png" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter finance">
+                  <a class="portfolio-link" href="#portfolioModal9" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/Screenshot_215_900x650.png" alt="">
+                  </a>
+              </div>              
+              <div class="col-sm-4 portfolio-item filter marketing">
+                  <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/Screenshot_215_900x650.png" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter marketing">
+                  <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/Screenshot_215_900x650.png" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter finance">
+                  <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/Screenshot_215_900x650.png" alt="">
+                  </a>
+              </div> 
+          </div>
+      </section>
+
+
+    <!--====================================================
+                          CONTACT
+    ======================================================-->       
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column">
+          <div class="row my-auto" id="contact"> 
+            <div class="col-md-8">
+              <div class="contact-cont">
+                <h2 class="text-center">Contact Me</h2>
+                <div class="mb-5 heading-border"></div>
+                <div class="heading-border-light"></div>
+                <p>I am interested in freelance opportunities-especially ambitious or
+large projects. However, if you have other request or question, don't
+hesitate to contact me using side form either.</p>
+              </div>   
+              <div class="row con-form">
+                <div class="col-md-12">
+                  <input type="text" name="full-name" placeholder="Full Name" class="form-control">
+                </div>
+                <div class="col-md-12">
+                  <input type="text" name="email" placeholder="Email Id" class="form-control">
+                </div>
+                <div class="col-md-12">
+                  <input type="text" name="subject" placeholder="Subject" class="form-control">
+                </div>
+                <div class="col-md-12"><textarea name="" id=""></textarea></div>
+                <div class="col-md-12 sub-but"><button class="btn btn-general btn-white" role="button">Send</button></div>
+              </div>
             </div>
-        </section>
-        <section id="projects">
-            <div class="project">
-                <img src="project1.jpg" alt="Project Image">
-                <p>Description of project 1</p>
-                <button onclick="viewSourceCode('project1-url')">View Source Code</button>
+            <div class="col-md-4 col-sm-12 mt-5"> 
+              <div class="contact-cont2"> 
+          
+                <div class="contact-phone contact-side-desc contact-box-desc">
+                  <h3><i class="fa fa-phone cl-atlantis fa-2x"></i> Phone</h3>
+                  <p>201-238-8998</p>
+                </div>
+                <div class="contact-mail contact-side-desc contact-box-desc">
+                  <h3><i class="fa fa-envelope-o cl-atlantis fa-2x"></i> Email</h3>
+                <address class="address-details-f"> 
+        
+                  Email: <a href="mailto:arunsinghsnd@gmail.com" class="">miltonwhite0124@gmail.com</a>
+                </address>
+                </div>
+              </div>
+            </div> 
+          </div>
+      </section>
+
+     
+
+
+    </div>
+
+<!--====================================================
+                    Projects MODALS
+======================================================-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" >
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl"></div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                          <div class="modal-body">
+                              <div class="title-bar">
+                                <div class="col-md-12">
+                                  <h2 class="text-center">Our Project</h2>
+                                  <div class="heading-border"></div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <img class="img-fluid img-centered" src="img/portfolio/Screenshot_215_900x650.png" alt="">
+                                </div>
+                                <div class="col-md-6">
+                                  <p>This website Design is based on News Portal ,the Front end responsive web development API website which is more Interactive with the user
+                                  interface .Here I have used only Html, CSS and JavaScript only .</p>
+                                  <ul class="list-inline item-details">
+                                      <li>Client:
+                                          <strong>
+                                            <a href="#">Self Project</a>
+                                          </strong>
+                                      </li>
+                                      <li>Date:
+                                          <strong>
+                                            <a href="#">February-April 2018</a>
+                                          </strong>
+                                      </li>
+                                      <li>Service:
+                                          <strong>
+                                            <a href="#">Web Development</a>
+                                          </strong>
+                                      </li>
+                                  </ul>
+                                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                      <i class="fa fa-times"></i> Close
+                                  </button>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/Project 2.png" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>This project is based on the Front end responsive web development API website which is more Interactive with the user
+                                interface .Here I have used only Html, CSS , JavaScript ,Bootstraps frame work and j query .
+                                This combination education and writing own query about anythings.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Hackathons Pojects</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">August-September 2018</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                </div>
             </div>
-           <section id="projects">
-            <div class="project-2">
-                <img src="project1.jpg" alt="Project Image">
-                <p>Description of project 1</p>
-                <button onclick="viewSourceCode('project1-url')">View Source Code</button>
             </div>
-     <section id="projects">
-            <div class="project-3">
-                <img src="project1.jpg" alt="Project Image">
-                <p>Description of project 1</p>
-                <button onclick="viewSourceCode('project1-url')">View Source Code</button>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/Screenshot_252_900x650.png" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>Project was to Develop for front-end website Design on Bit-Coin that Shows Good Gradient and Attractive Design.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Self - Website Design</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">Januray 2020</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                              </div>
+                          </div>
+                        </div>
+                </div>
             </div>
-            <!-- Repeat for other projects -->
-        </section>
-        <section id="contact">
-            <form id="contact-form">
-                <input type="email" name="email" placeholder="Your Email">
-                <input type="text" name="subject" placeholder="Subject">
-                <textarea name="message" placeholder="Your Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-            <div>
-                <p>Phone: 123-456-7890</p>
-                <p>Email: milton.white@example.com</p>
             </div>
-        </section>
-    </main>
-    <footer>
-        <a href="https://github.com/miltonwhite"><img src="github-icon.png" alt="GitHub"></a>
-        <a href="https://linkedin.com/in/miltonwhite"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-    </footer>
-    <script src="scripts.js"></script>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/Screenshot_253_900x650.png" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>Project was to develop front-end of an Internship portal that hleps intership seeking students to  apply for intership and helps employers to hire new and emerging young talents .</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Responsive Website Design</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">August-December 2019</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                              </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/Screenshot_254_900x650.png" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>Project was to develop on Centralized Airport licensing for Appying Airport license where vendor apply for opening a new shop through online document into small segments</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Hackathons Project</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">Januray 2020</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/Screenshot_252_900x650.png" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Techs Soft</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">April 2018</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>    
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/Screenshot_215_900x650.png" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Techs Soft</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">April 2018</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/Screenshot_215_900x650.png" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Techs Soft</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">April 2018</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/Screenshot_215_900x650.png" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Techs Soft</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">April 2018</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>    
+
+
+    <!-- Global javascript -->
+    <script src="./static/js/jquery/jquery.min.js"></script>
+    <script src="./static/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./static/js/jquery-easing/jquery.easing.min.js"></script>
+    <script src="./static/js/counter/jquery.waypoints.min.js"></script>
+    <script src="./static/js/counter/jquery.counterup.min.js"></script>
+    <script src="./static/js/custom.js"></script>
+    <script>
+        $(document).ready(function(){
+
+        $(".filter-b").click(function(){
+            var value = $(this).attr('data-filter');
+            if(value == "all")
+            { 
+                $('.filter').show('1000');
+            }
+            else
+            { 
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');
+            }
+        });
+        
+        if ($(".filter-b").removeClass("active")) {
+          $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+        });
+
+        // SKILLS
+        $(function () {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 2000
+            });
+
+        });
+    </script> 
 </body>
+
 </html>

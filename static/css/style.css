@@ -1,0 +1,377 @@
+/* GENERAL STYLE */
+
+body {
+    font-family: 'Open Sans', serif;
+    padding-top: 54px;
+    color: #868e96;
+    background-image: url('./static/assets/images/bg.jpeg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 5rem; /* Adjust padding to avoid content being blocked by the navbar */
+        padding-left: 0;
+    }
+}
+
+h1 {
+    font-family: 'Saira Extra Condensed', serif;
+    font-weight: 700;
+    color: white;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Saira Extra Condensed', serif;
+    font-weight: 700;
+    color: black;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+    position: relative;
+    margin-top: 5rem; /* Add margin to push content below the navbar */
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+a {
+    color: black;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: red;
+}
+
+.subheading {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 1.35rem;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+}
+
+.btn:hover {
+    background-color: red;
+    color: white;
+}
+
+/*==================================================
+                  SOCIAL-ICON
+====================================================*/
+
+.list-social-icons a {
+    color: red;
+}
+
+.list-social-icons a:hover {
+    color: black;
+}
+
+.list-social-icons a .fa-lg {
+    font-size: 1.75rem;
+}
+
+.list-icons {
+    font-size: 3rem;
+}
+
+.list-icons .list-inline-item i {
+    color: red;
+}
+
+.list-icons .list-inline-item i:hover {
+    color: black;
+}
+
+/*==================================================
+                    NAV-BAR
+====================================================*/
+
+#topNav .navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+    #topNav {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row; /* Change to row for horizontal layout */
+        width: 100%; /* Full width for top bar */
+        height: auto; /* Adjust height */
+        background-color: black !important;
+        z-index: 1000; /* Ensure it stays on top */
+    }
+    #topNav .navbar-brand {
+        display: flex;
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+    #topNav .navbar-brand .img-profile {
+        max-width: 3rem; /* Adjust size as needed */
+        max-height: 3rem; /* Adjust size as needed */
+        border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    }
+    #topNav .navbar-collapse {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        width: auto;
+        margin: 0 auto;
+    }
+    #topNav .navbar-collapse .navbar-nav {
+        flex-direction: row; /* Change to row for horizontal layout */
+        width: auto;
+    }
+    #topNav .navbar-collapse .navbar-nav .nav-item {
+        display: inline-block; /* Inline for horizontal layout */
+    }
+    #topNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        display: inline-block; /* Inline for horizontal layout */
+        padding: 1rem; /* Adjust padding as needed */
+        color: red; /* Adjust text color as needed */
+    }
+}
+
+/*==================================================
+                  BUTTON (Generic)
+====================================================*/
+
+.btn-general {
+    background-color: transparent;
+    text-align: center;
+    border-width: 1px;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: black;
+    background-color: #868e96;
+    font-weight: bold;
+    color: black;
+    border-radius: 12px;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    color: red;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-green {
+    border-color: black;
+    color: black;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*==================================================
+                  SECTION (Generic)
+====================================================*/
+
+.heading-border {
+    width: 60px;
+    height: 10px;
+    background-color: red;
+    margin: 0 auto 20px auto;
+}
+
+section.resume-section {
+    border-bottom: 1px solid #dee2e6;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+section.resume-section .resume-item .resume-date {
+    min-width: none;
+}
+
+@media (min-width: 768px) {
+    section.resume-section {
+        min-height: 100vh;
+    }
+    section.resume-section .resume-item .resume-date {
+        min-width: 18rem;
+    }
+}
+
+@media (min-width: 992px) {
+    section.resume-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
+
+.bg-primary {
+    background-color: #0033ff !important;
+    /* background: linear-gradient(to right , #db1bf6 ,#19d7f8) !important;*/
+}
+
+.text-primary {
+    color: white !important;
+}
+
+.text-primary-1 {
+    color: #001aff !important;
+}
+
+/*==================================================
+                      HOME
+====================================================*/
+
+#home {
+    background-image: url(../assets/images/bg.jpeg); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full screen height */
+    padding-top: 56px; /* Ensure it clears the navbar */
+    margin-top: -56px; /* Offset to remove gap */
+}
+
+/*==================================================
+                    EXPERIENCE
+====================================================*/  
+#experience {
+    background: #f5f5f5;
+}
+
+#experience .card h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: none;
+    color: #555;
+}
+
+/*====================================================
+                   PORTFOLIO
+======================================================*/
+
+#portfolio {
+    padding: 100px 0;
+} 
+
+.port-head-cont {
+    margin: 20px auto 40px auto;
+    text-align: center;
+}
+
+.port-head-cont button {
+    margin: 5px 2px;
+}
+
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    position: relative;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption-port {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    opacity: 0;
+    background: rgba(203, 211, 218, 0.73);
+}
+
+#portfolio .portfolio-item .portfolio-link .caption-port:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    color: white;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content h3,
+#portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content h4 {
+    margin: 0;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+@media (min-width: 767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
+.portfolio-modal .modal-dialog {
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    border: none;
+    border-radius: 0;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .title-bar {
+    padding: 0 0 50px 0;
+}
+
+.portfolio-modal .title-bar h1 {
+    visibility: initial;
+    animation-name: initial;
+}
+
+.portfolio-modal .modal-dialog .modal-content {
+    padding: 10px 0 100px 0;
+    border: 0;
+    border-radius: 0;
+} 
+
