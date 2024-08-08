@@ -106,6 +106,7 @@ a:active {
 #topNav .navbar-nav .nav-item .nav-link {
     font-weight: 600;
     text-transform: uppercase;
+    color: red;
 }
 
 @media (min-width: 992px) {
@@ -126,11 +127,7 @@ a:active {
         margin: 0 auto;
         padding: 0.5rem;
     }
-    #topNav .navbar-brand .img-profile {
-        max-width: 3rem; /* Adjust size as needed */
-        max-height: 3rem; /* Adjust size as needed */
-        border: 0.5rem solid rgba(255, 255, 255, 0.2);
-    }
+
     #topNav .navbar-collapse {
         display: flex;
         align-items: center;
@@ -169,9 +166,9 @@ a:active {
 
 .btn-white {
     border-color: black;
-    background-color: #868e96;
+    background-color: black;
     font-weight: bold;
-    color: black;
+    color: white;
     border-radius: 12px;
 }
 
@@ -233,7 +230,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-    background-color: #0033ff !important;
+    background-color: black !important;
     /* background: linear-gradient(to right , #db1bf6 ,#19d7f8) !important;*/
 }
 
@@ -241,137 +238,233 @@ section.resume-section .resume-item .resume-date {
     color: white !important;
 }
 
-.text-primary-1 {
-    color: #001aff !important;
-}
+
 
 /*==================================================
                       HOME
 ====================================================*/
 
 #home {
-    background-image: url(../assets/images/bg.jpeg); 
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100vh; /* Full screen height */
-    padding-top: 56px; /* Ensure it clears the navbar */
-    margin-top: -56px; /* Offset to remove gap */
+    position: relative;
+            background-image: url(../assets/images/bg.jpeg); 
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Full screen height */
+            padding-top: 56px; /* Ensure it clears the navbar */
+            margin-top: -56px; /* Offset to remove gap */
+            z-index: 1;
+        }
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1; /* Ensure the overlay is behind content */
 }
+
 
 /*==================================================
-                    EXPERIENCE
-====================================================*/  
-#experience {
-    background: #f5f5f5;
-}
-
-#experience .card h4 {
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: none;
-    color: #555;
-}
-
-/*====================================================
-                   PORTFOLIO
-======================================================*/
+                  PORTFOLIO
+====================================================*/
 
 #portfolio {
     padding: 100px 0;
-} 
-
-.port-head-cont {
-    margin: 20px auto 40px auto;
-    text-align: center;
 }
 
-.port-head-cont button {
-    margin: 5px 2px;
+.portfolio-item {
+    margin-bottom: 30px;
 }
 
-#portfolio .portfolio-item {
-    right: 0;
-    margin: 0 0 15px;
-}
-
-#portfolio .portfolio-item .portfolio-link {
+.portfolio-link {
     position: relative;
     display: block;
-    max-width: 400px;
-    margin: 0 auto;
     cursor: pointer;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption-port {
-    position: absolute;
+.portfolio-caption {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.portfolio-caption h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.portfolio-caption p.description {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #868e96;
+}
+
+.portfolio-caption a.btn {
+    margin-top: 10px;
+}
+
+/* Lightbox CSS */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-    transition: all ease 0.5s;
-    opacity: 0;
-    background: rgba(203, 211, 218, 0.73);
-}
-
-#portfolio .portfolio-item .portfolio-link .caption-port:hover {
-    opacity: 1;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content {
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .lightbox-content img {
     width: 100%;
-    height: 20px;
-    margin-top: -12px;
+    height: auto;
+  }
+  
+  .close-lightbox {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close-lightbox:hover,
+  .close-lightbox:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+
+
+/*==================================================
+                    CONTACT
+====================================================*/ 
+
+#contact{
+    padding: 50px 0;
+ }
+  
+  #contact .contact-cont h3{
+    color:#555;
+    font-size: 45px;
+  }
+  
+  #contact .contact-cont p{
+    padding-right: 20px;
+    font-size: 15px;
+  }
+  
+  #contact .contact-cont2 address,
+  #contact .contact-cont2 address a{
+    color:#666;
+  }
+   
+  .con-form input {
+      border-color: #ccc;
+      border-radius: 0;
+      color: #717171;
+      margin-top: 30px; 
+  }
+  
+  .con-form textarea {
+      width: 100%; 
+      height: 200px;
+      margin:30px 0;
+      border-color: #ccc;
+      border-radius: 0;
+      color: #717171;
+  }
+  
+  .contact-side-desc{
+      padding-top: 110px;
+  } 
+  
+  .contact-box-desc h3{
+    color:#555;
+  }
+  
+  .contact-box-desc h3 i{
+    color: red;
+  }
+  
+  .social-icon-f li{
+    display: inline-block;
+  }
+  
+  .social-icon-f li i{
+    height: 35px;
+    width:35px;
+    line-height: 35px;
+    border:2px solid red;
     text-align: center;
-    color: white;
+    margin-right: 10px;
+    border-radius: 50%;
+  }  
+  
+  @media(max-width: 767px){
+      #contact-p2 .con-form input{
+          margin-bottom: 30px;
+      }
+      .con-form textarea {
+          width: 100%; 
+          height: 200px;
+          margin:10px 0 30px 0;
+          border-color: #ccc;
+          border-radius: 0;
+          color: #717171;
+      }
+  
+      .contact-box-desc{
+          text-align: center;
+      }
+  
+      #contact .social-icon-f{
+          text-align: center;
+      }
+  }
+  
+  @media (max-width: 575px){
+      #contact .social-icon-f{
+              text-align: center;
+      }    
+  }
+  
+  @media (max-width: 420px){
+      #contact .social-icon-f{
+              text-align: center;
+      }    
+  }
+   
+
+/*==================================================
+                    FOOTER
+====================================================*/ 
+
+footer {
+    text-align: center;
+    padding: 25px 0;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content i {
-    margin-top: -12px;
+footer .list-inline {
+    margin-bottom: 25px;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content h3,
-#portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content h4 {
-    margin: 0;
+footer .list-inline .fa-stack {
+    font-size: 1.5rem;
 }
-
-#portfolio * {
-    z-index: 2;
-}
-
-@media (min-width: 767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
-}
-
-.portfolio-modal .modal-dialog {
-    max-width: 100%;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    border: none;
-    border-radius: 0;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.portfolio-modal .title-bar {
-    padding: 0 0 50px 0;
-}
-
-.portfolio-modal .title-bar h1 {
-    visibility: initial;
-    animation-name: initial;
-}
-
-.portfolio-modal .modal-dialog .modal-content {
-    padding: 10px 0 100px 0;
-    border: 0;
-    border-radius: 0;
-} 
-

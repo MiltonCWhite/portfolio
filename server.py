@@ -34,7 +34,7 @@ def submit_form():
         try:
             data  = request.form.to_dict()
             write_to_csv(data)
-            return redirect('/thankyou.html')
+            return 'Thank you will respond to your email as soon as possible'
         except:
             return 'did not save to database'
     else:
