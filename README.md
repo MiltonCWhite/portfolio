@@ -1,5 +1,5 @@
 # Personal Portfolio
-Welcome to my personal portfolio! This repository showcases my work, skills, and projects as an intuitive coder. It is designed to help students like myself get noticed and secure job opportunities.
+Welcome to my personal portfolio! This repository showcases my work, skills, and projects as an intuitive coder. 
 ## Features
 - **Responsive Design**: The portfolio is fully responsive, ensuring it looks great on all devices.
 - **Projects Section**: Highlighting key projects with descriptions and links.
