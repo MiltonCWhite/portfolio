@@ -39,10 +39,6 @@ Configured a secure VPN lab using ProtonVPN and Azure VMs.
 📬 Contact
 - Email: miltonwhite0124@gmail.com
 
-- LinkedIn: Milton C. White
-
-- GitHub: MiltonCWhite
-
 ## Installation
 To run this portfolio locally, follow these steps:
 
