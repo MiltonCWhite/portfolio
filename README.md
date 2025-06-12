@@ -13,7 +13,8 @@ Welcome to my personal portfolio website! This site showcases my technical proje
 - JavaScript
 - Python: Flask
 
-🖥️ Portfolio Projects
+## 🖥️ Portfolio Projects
+
 🎫 Help Desk Ticketing System
 - A complete simulation of a Help Desk workflow using osTicket.
 
