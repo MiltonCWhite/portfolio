@@ -15,32 +15,32 @@ Welcome to my personal portfolio website! This site showcases my technical proje
 
 🖥️ Portfolio Projects
 🎫 Help Desk Ticketing System
-A complete simulation of a Help Desk workflow using osTicket.
+- A complete simulation of a Help Desk workflow using osTicket.
 
-osTicket: Prerequisites and Installation
+- osTicket: Prerequisites and Installation
 
-osTicket: Post-Installation Configuration
+- osTicket: Post-Installation Configuration
 
-osTicket: Ticket Lifecycle Examples
+- osTicket: Ticket Lifecycle Examples
 
 ☁️ Microsoft Azure Projects
 Experience setting up IT infrastructure and network analysis using Microsoft Azure.
 
-Active Directory in Azure
+- Active Directory in Azure
 
-NSG & Wireshark Protocol Analysis
+- NSG & Wireshark Protocol Analysis
 
 🔐 VPN Setup
 Configured a secure VPN lab using ProtonVPN and Azure VMs.
 
-VPN Setup in a Virtual Machine Environment
+- VPN Setup in a Virtual Machine Environment
 
 📬 Contact
-Email: miltonwhite0124@gmail.com
+- Email: miltonwhite0124@gmail.com
 
-LinkedIn: Milton C. White
+- LinkedIn: Milton C. White
 
-GitHub: MiltonCWhite
+- GitHub: MiltonCWhite
 
 ## Installation
 To run this portfolio locally, follow these steps:
