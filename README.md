@@ -1,4 +1,4 @@
-💼 Milton White | Aspiring Help Desk Technician Portfolio
+## 💼 Milton White | Aspiring Help Desk Technician Portfolio
 Welcome to my personal portfolio website! This site showcases my technical projects, certifications, and background as an aspiring Help Desk Technician. Built with responsive design in mind, the site serves as a hub to demonstrate my growing expertise in IT support, networking, and system administration.
 
 ## Features
